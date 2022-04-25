@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>숫자야구게임 ver.1.0</title>
+</head>
+<body>
+
+
+  <img src="https://tistory3.daumcdn.net/tistory/5270084/5ed315f737f64efc84a4c96ee67fc236">
+
+
+<div class="contentsBox">
+  <h1>숫자 야구 게임</h1>
+<form id="form">
+  <input type="text" id="input" oninput="this.value = this.value.replace(/[^1-9]/g, '').replace(/(\..*)\./g, '$1');" />
+  <button>확인</button>
+</form>
+
+<div id="logs"></div>
+<button class="reTry" onClick="reTry()">다시하기</button>
+</div>
+
+<div class="version">
+  <p>version.1.0</p>
+  <p>https://bicute.net</p>
+  <p>Last updated: 2022.04.17</p>
+</div>
+
+  <script src="./default.js"></script>
+</body>
+</html>
